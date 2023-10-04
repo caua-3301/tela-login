@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cauã Pires Soares">
+    <meta name="keywords" content="login, sistema de login, email, senha, validação">
+    <meta name="description" content="Uma página simples para um sistema de login">
+    <meta name="reply-to" content="cauapires849@gmail.com">
+    <link rel="stylesheet" href="./style/style.css">
+
+    <title>Login</title>
+</head>
+
+<body>
+
+    <div id="cont-anima">
+        <div class="stars">
+            <span style="--i:19"></span>
+            <span style="--i:67"></span>
+            <span style="--i:98"></span>
+            <span style="--i:63"></span>
+            <span style="--i:29"></span>
+            <span style="--i:67"></span>
+            <span style="--i:99"></span>
+            <span style="--i:87"></span>
+            <span style="--i:78"></span>
+            <span style="--i:29"></span>
+            <span style="--i:67"></span>
+            <span style="--i:99"></span>
+            <span style="--i:81"></span>
+            <span style="--i:78"></span>
+            <span style="--i:87"></span>
+            <span style="--i:7"></span>
+            <span style="--i:99"></span>
+        </div>
+
+    </div>
+
+    <div id="cont-onde">
+        <span class="onde" >Log In</span>
+        <span class="onde" >Create</span>
+    </div>
+
+    <div id="cont-tra">
+        <span class="interno-cont">  </span>
+    </div>
+
+    <main id="container" class="next-input-area">
+        <!-- Cadastrar novo usuário Log In -->
+        <section class="input-area" id="login">
+            <h2 class="login-title">Log In</h2>
+            <input type="email" name="email" id="email" placeholder="Email" >
+
+            <input type="password" name="senha" id="senha" placeholder="Senha">
+
+            <button class="botao">LOGIN</button>
+
+            <p id="rec-senha">Esqueceu sua senha?</p>
+        </section>
+
+        <!-- Usuário já existente -->
+        <section class="input-area" id="create">
+            <h2 class="login-title" >Create</h2>
+            <input type="text" name="nome" id="nome" placeholder="Nome">
+
+            <input type="tel" name="telefone" id="telefone" placeholder="Telefone">
+
+            <input type="email" name="email" id="email" placeholder="Email">
+
+            <input type="password" name="senha" id="senha" placeholder="Senha">
+
+            <button class="botao">CREATE</button>
+
+        </section>
+    </main>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

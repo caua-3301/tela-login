@@ -1,0 +1,187 @@
+@charset "UTF-8";
+
+body{
+    width: 99%;
+    height: 99%;
+    margin: 0;
+    padding: 0;
+    background: #0b0d0f;
+    overflow-y: unset;
+    
+}
+
+.login-title {
+    color: white;
+}
+
+#cont-anima{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.stars{
+    position: absolute;
+    display: flex;
+}
+
+.stars span{
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    margin: 0 33px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px #ffffff44, 
+    0 0 40px #ffffff,
+    0 0 90px #ffffff;
+    animation: animar calc(1550s/ var(--i)) linear infinite;
+}
+
+@keyframes animar {
+    0% {
+        transform: translateY(100vh) scale(0);
+    }
+    100% {
+        transform: translateY(-10vh) scale(1);
+    }
+}
+
+h2{
+    font: normal bold 2em sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+/*Container que contém as duas areas (Login e Create Acount)*/
+#container{
+    margin-top: 100px;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    justify-content: center;
+    transform-style: preserve-3d;
+    transition: all .95s;
+}
+
+.input-area{
+    width: 350px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    position: absolute;
+}
+
+#login{
+    background-image: url(/img/pexels-akın-akdağ-14611889.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    transform:  rotateY(180deg) rotateX(20deg);
+    backface-visibility: hidden;
+}
+
+#create{
+    background-image: url(/img/pexels-akın-akdağ-14611889.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    backface-visibility: hidden;
+}
+
+.next-input-area{
+    transform: rotateY(180deg);
+}
+
+.botao {
+    margin-top: 40px;
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    font: normal bold .85em sans-serif;
+    background-color: 0;
+    transition: all .8s;
+    cursor: pointer;
+}
+
+.botao:hover{
+    box-shadow: 0 0 0 1px #ffffff44, 
+    0 0 20px #ffffff94,
+    0 0 50px #ffffff94;
+    transition: all .8s;
+}
+
+input{
+    background-color: transparent;
+    border-width: 0 0 2px 0;
+    border-style: solid;
+    border-color: #ffffff;
+    height: 30px;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+input::placeholder{
+    color: #ffffff;
+}
+
+#cont-tra{
+    background-color: rgba(255, 255, 255, 0.643);
+    display: inline-block;
+    width: 50px;
+    height: 14px;
+    border-radius: 20px;
+    position: absolute;
+    left: 48.5%;
+    top: 14.5%;
+    cursor: pointer;
+}
+
+.interno-cont {
+    background-color: #f0f0f0;
+    width: 20px;
+    height: 20px;
+    transform: translate(-3px, -3.3px);
+    border-radius: 50%;
+    display: inline-block;
+    transition: all .95s;
+}
+
+.anima {
+    transform: translate(30px, -3.3px);
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: all .95s;
+}
+
+#rec-senha {
+    font: normal normal .8em sans-serif;
+    display: inline-block;
+    margin-bottom: -20px;
+    margin-top: 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#rec-senha:hover {
+    text-decoration: underline;
+
+}
+
+#cont-onde {
+    position: absolute;
+    left: 44.9%;
+    top: 8%;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.onde {
+    color: #ffffff;
+    font: normal bold 1em sans-serif;
+}
